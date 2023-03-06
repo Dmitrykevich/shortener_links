@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You links here</title>
+</head>
+<body>
+{% for item in object_list %}
+<p>{{ item.name }} - {{request.hostname}}/{{ item.url_hash }}</p>
+{% endfor %}
+</body>
+</html>
